@@ -1,0 +1,25 @@
+business
+	gps
+	telno
+	hpno
+	biztype
+	template
+	subcription
+
+biztag	
+
+listing
+	business_id
+	name
+	address
+	content
+	image_id
+
+subpage
+
+event
+
+
+tag
+
+image

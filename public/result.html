@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<title> Free Bulk Google Index Checker Tool</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="We present you with our new free bulk domain index checker tool. Webmaster and other users can check domain indexing in Google for multiple sites, domains and urls. You can also download the files for own use." />
+    <meta name="keywords" content="Bulk Google Index Checker, Free Bulk Index Checker, Free Google Index Checking tool for websites" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+	<script type="text/javascript" src="http://tablesorter.com/jquery-latest.js"></script>
+<script type="text/javascript" src="http://tablesorter.com/__jquery.tablesorter.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+ $("#tblstats").tablesorter();
+	});
+</script>
+
+
+   <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body id="page-top" class="index">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Index Checking</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">                  
+                         <li class="page-scroll">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+
+ <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+<center><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- indexchecking 970x90 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-1040627948810297"
+     data-ad-slot="6118787162"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center>
+                <div class="col-lg-12">
+                    <div class="intro-text">
+                        <span class="name">Free Bulk Google Index Checker Tool</span>
+                        <hr class="star-light">
+                        <p align=justify>Checking each url in Google to find whether it is indexed or not takes a lot of time. So we thought why not build a tool which can check in bulk weather a site is indexed in Google or not. This is a unique tool which helps you in fast checking to find out which website domain is present in <a href="http://www.google.com/insidesearch/howsearchworks/crawling-indexing.html" style="text-decoration:none; color:#ffffff;"><b>Google index</b></a> and which is not in it.</p>
+
+<p align=justify>We believe in giving back to the community so that is why this <b>Bulk Google Indexing Checker Tool</b> is free for use. Come and make use of this tool to find if the domain name you have in hand is in the search index of Google or not. Advantages of using this tool is that it is fast, easy to operate, bulk domains can be checked in one go and on top of it the list can be downloaded in excel or CSV format and sent to whoever you want to send it to.</p>
+
+<p align=justify>So come on and use this amazing free index checking tool  and do give us your feedbacks on the same. </p>
+
+<p align=justify><b>Happy Checking!</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+
+
+
+<h2>This tool support URL's up to 25 at once!.</h2>
+
+ <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">     
+
+
+<form action="/" method="post" id="fMain" name="fMain">
+
+
+<textarea class="form-control" rows="10"  id="f_urls" name="f_urls" onClick="if(this.value=='Enter URLs...') { this.value = ''; }">Enter URLs...</textarea>
+
+
+<br />
+<center><input type="submit" value="Find Indexing" class="btn btn-primary btn-large"></center><br />
+
+</form>
+
+<div class="statsmsg" id="statsmsg"></div>
+
+
+
+ <h2>Indexing Results</h2>
+<form action="/SaveToExcel.php" method="post" target="_blank"
+onsubmit='$("#datatodisplay").val( $("&lt;div&gt;").append( $("#tblstats").eq(0).clone() ).html() )'>
+<input  type="image" src="/Excel_export.gif">
+<input type="hidden" id="datatodisplay" name="datatodisplay" />
+</form>
+        <table class="table table-striped table-bordered table-condensed" id="tblstats" cellspacing="0" cellpadding="0" width="80%">
+<thead><tr>
+	<th width=50%><b>URL</b></th>
+	<th width=30%><b>Results</b></th>
+	</tr></thead>
+<tbody><tr class='rowclass1'><td><a href='http://www.pantagraph.com/users/profile/hayescourtney/' target='_blank'>http://www.pantagraph.com/users/profile/hayescourtney/</a></td><td align='center'>Indexed</td></tr><tr class='rowclass2'><td><a href='http://www.startrek.com/view_profile/hayescourtney' target='_blank'>http://www.startrek.com/view_profile/hayescourtney</a></td><td align='center'>Not Indexed</td></tr><tr class='rowclass1'><td><a href='http://www.sodahead.com/user/profile/4049832/courtney-m-hayes/?public=true' target='_blank'>http://www.sodahead.com/user/profile/4049832/courtney-m-hayes/?public=true</a></td><td align='center'>Indexed</td></tr><tr class='rowclass2'><td><a href='http://www.supermanhomepage.com/profile.php?lookup=40601' target='_blank'>http://www.supermanhomepage.com/profile.php?lookup=40601</a></td><td align='center'>Indexed</td></tr><tr class='rowclass1'><td><a href='http://magicseaweed.com/user.php?id=603873' target='_blank'>http://magicseaweed.com/user.php?id=603873</a></td><td align='center'>Indexed</td></tr><tr class='rowclass2'><td><a href='http://www.shapeways.com/designer/hayescourtney' target='_blank'>http://www.shapeways.com/designer/hayescourtney</a></td><td align='center'>Indexed</td></tr><tr class='rowclass1'><td><a href='http://www.yaliberty.org/profiles/courtney-hayes' target='_blank'>http://www.yaliberty.org/profiles/courtney-hayes</a></td><td align='center'>Indexed</td></tr><tr class='rowclass2'><td><a href='http://www.pocketgpsworld.com/modules.php?name=Your_Account&op=userinfo&bypass=1&username=bentonchales' target='_blank'>http://www.pocketgpsworld.com/modules.php?name=Your_Account&op=userinfo&bypass=1&username=bentonchales</a></td><td align='center'>Indexed</td></tr><tr class='rowclass1'><td><a href='http://www.network54.com/Profile/hayescourtney' target='_blank'>http://www.network54.com/Profile/hayescourtney</a></td><td align='center'>Indexed</td></tr><tr class='rowclass2'><td><a href='http://www.morguefile.com/creative/hayescourtney' target='_blank'>http://www.morguefile.com/creative/hayescourtney</a></td><td align='center'>Indexed</td></tr><tr class='rowclass1'><td><a href='http://forums.site5.com/member.php?u=350420' target='_blank'>http://forums.site5.com/member.php?u=350420</a></td><td align='center'>Indexed</td></tr><tr class='rowclass2'><td><a href='http://www.mobypicture.com/user/hayescourtney' target='_blank'>http://www.mobypicture.com/user/hayescourtney</a></td><td align='center'>Indexed</td></tr><tr class='rowclass1'><td><a href='http://forum.videohelp.com/members/240167-hayescourtney' target='_blank'>http://forum.videohelp.com/members/240167-hayescourtney</a></td><td align='center'>Not Indexed</td></tr><tr class='rowclass2'><td><a href='http://www.metal-archives.com/users/hayescourtney' target='_blank'>http://www.metal-archives.com/users/hayescourtney</a></td><td align='center'>Indexed</td></tr><tr class='rowclass1'><td><a href='http://forum.kaltura.org/users/hayescourtney/activity' target='_blank'>http://forum.kaltura.org/users/hayescourtney/activity</a></td><td align='center'>Not Indexed</td></tr><tr class='rowclass2'><td><a href='http://forums.redflagdeals.com/members/hayescourtney-1178721/' target='_blank'>http://forums.redflagdeals.com/members/hayescourtney-1178721/</a></td><td align='center'>Not Indexed</td></tr><tr class='rowclass1'><td><a href='https://www.ifixit.com/User/1152749/hayescourtney' target='_blank'>https://www.ifixit.com/User/1152749/hayescourtney</a></td><td align='center'>Indexed</td></tr><tr class='rowclass2'><td><a href='http://forums.mydigitallife.info/members/492395-hayescourtney' target='_blank'>http://forums.mydigitallife.info/members/492395-hayescourtney</a></td><td align='center'>Indexed</td></tr><tr class='rowclass1'><td><a href='http://www.wmmr.com/extras/profile/index.aspx?mid=112597373' target='_blank'>http://www.wmmr.com/extras/profile/index.aspx?mid=112597373</a></td><td align='center'>Indexed</td></tr><tr class='rowclass2'><td><a href='http://forum.thegradcafe.com/user/214450-hayescourtney/' target='_blank'>http://forum.thegradcafe.com/user/214450-hayescourtney/</a></td><td align='center'>Indexed</td></tr><tr class='rowclass1'><td><a href='http://perpustakaan.bappenas.go.id:8080/jforum/user/editDone/19233.page' target='_blank'>http://perpustakaan.bappenas.go.id:8080/jforum/user/editDone/19233.page</a></td><td align='center'>Not Indexed</td></tr><tr class='rowclass2'><td><a href='http://torgi.gov.ru/forum/user/editDone/123685.page' target='_blank'>http://torgi.gov.ru/forum/user/editDone/123685.page</a></td><td align='center'>Not Indexed</td></tr><tr class='rowclass1'><td><a href='http://qcn.stanford.edu/sensor/view_profile.php?userid=107432' target='_blank'>http://qcn.stanford.edu/sensor/view_profile.php?userid=107432</a></td><td align='center'>Indexed</td></tr><tr class='rowclass2'><td><a href='http://czwlwz.chaozhou.gov.cn/JForum/user/editDone/34995.page' target='_blank'>http://czwlwz.chaozhou.gov.cn/JForum/user/editDone/34995.page</a></td><td align='center'>Not Indexed</td></tr><tr class='rowclass1'><td><a href='https://digger3head.wordpress.com/2015/03/31/why-you-need-to-invest-in-the-best-nightclubs/' target='_blank'>https://digger3head.wordpress.com/2015/03/31/why-you-need-to-invest-in-the-best-nightclubs/</a></td><td align='center'>Indexed</td></tr></tbody>
+        </table>
+<table border=0 width=100%><tr><td align=right>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- index check 336x280 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-1040627948810297"
+     data-ad-slot="8793051962"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</td>
+<td align=left>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- index check 336x280 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-1040627948810297"
+     data-ad-slot="8793051962"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></td></tr></table>
+</td>
+<td align=left>
+</td></tr></table><br>
+       </div>
+        </div>
+    </section>
+
+  
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                           </div>
+                    <div class="footer-col col-md-4">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/indexchecker" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://plus.google.com/104170014413422094160/" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="http://twitter.com/indexchecker" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="http://www.pinterest.com/indexchecking/" class="btn-social btn-outline"><i class="fa fa-pinterest"></i></a>
+                            </li>
+                            </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                                           </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; 2014 <a href="http://indexchecking.com/" style="text-decoration:none; color:#ffffff;"><b>Index Checking</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visble-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                                                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                    
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                        
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                                                     <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                                                     <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                                                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+</body>
+
+</html>

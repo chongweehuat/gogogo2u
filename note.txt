@@ -1,0 +1,40 @@
+Your account has been created
+To finish the registration process, check your email Inbox now and click on the confirmation link that we have sent you.
+
+You didn't receive our email?
+
+Check your spam or junk folder.
+It is very common that emails sent automatically end up in a spam folder.
+
+Contact us.
+If you don't receive any email from us within a few minutes and there is no such email in a spam folder, it probably means that it has been rejected by your mail server.
+
+In this case, please report the issue to our staff at contact@vertabelo.com and we will send you a reply with your confirmation link.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Your account is inactive.
+If you are in registration process, please finish it.
+
+Just click on the confirmation link that we sent to you.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+Your Vertabelo account has been created
+
+Dear chong wee huat,
+
+Thank you for choosing Vertabelo.
+
+To finish the registration process, please click on following link:
+
+https://my.vertabelo.com/mail/create-new-account-confirmation?token=HE471cCW0G3bsg5BDdiIhAlNVEkttC9vwjGw04YFy71v85gDdAn936I8h3n84Nlb46iKh3weJuFYWMFSULpXmYiFFus7NQauT1pZ
+
+The email was generated automatically by https://my.vertabelo.com . Please DO NOT REPLY to this email. If
+If you did not request a Vertabelo account, please delete this email.
+
+Best wishes,
+
+Vertabelo team
+contact@vertabelo.com
+https://my.vertabelo.com
