@@ -35,9 +35,9 @@ return [
 	],
 		
 	'facebook' => [
-		'client_id' => env('FACEBOOK_APP_ID'),
-		'client_secret' => env('FACEBOOK_APP_SECRET'),
-		'redirect' => env('FACEBOOK_REDIRECT_URL'),
+		'client_id' => env('FACEBOOK_APP_ID','1540782392825687'),
+		'client_secret' => env('FACEBOOK_APP_SECRET','9f0902b14809eb7f247a606fe3651a53'),
+		'redirect' => env('FACEBOOK_REDIRECT_URL','http://demo.gogogo2u.com/'),
 	],
 
 	'google' => [
