@@ -11,7 +11,7 @@
 |
 */
 
-app_init();
+//app_init();
 
 Route::get('test',function(){
 	//return phpinfo();
